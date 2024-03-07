@@ -121,24 +121,41 @@
 \PersonalEntry{Phone}{+47 94121127}
 \PersonalEntry{Mail}{\url{jorn.boni.hofstad@gmail.com}}
 
-%%% Education
-%%% ------------------------------------------------------------
-\NewPart{Education}{}
 
-\EducationEntry{M.Sc. Cybernetics and Robotics}{2015-2020}{Norwegian University of Science and Technology (NTNU)}{}
-\EducationEntry{Exchange semester}{Spring 2019}{École Polytechnique Fédérale de Lausanne (EPFL)}{}
+%%% Skills
+%%% ------------------------------------------------------------
+\NewPart{Skills}{}
+
+\SkillsEntry{Languages}{Norwegian (native)}
+\SkillsEntry{}{English (C2)}
+\SkillsEntry{}{Swiss German B2-C1 orally,  A1-A2 written) }
+\SkillsEntry{}{French (A2)}
+
+\SkillsEntry{Software}{Rust, C++, Python, Elixir, ProcMon, Docker}
+% \SkillsEntry{Other}{Driver's license}
+
 
 %%% Work experience
 %%% ------------------------------------------------------------
 \NewPart{Work experience}{}
 
-\EducationEntry{Developed infrastructeure for Contineous Integration and software}{2023-present}{Nordic Semiconductor}{
-I developed Continuous integration systems for Nordic's software using Jenkins.  
-}
+% \EducationEntry{Developed infrastructure for Continuous Integration and software}{2023-present}{Nordic Semiconductor}{
+% I developed Continuous integration systems for Nordic's software using Jenkins.  
+% }
 
-\EducationEntry{Developed and maintained tooling for working with Nordic devices}{2020-2023}{Nordic Semiconductor}{
-I developed cross-platform tooling for developing for Nordic Semiconductor devices. 
-This included profiling and parallelizing Rust, Python and Bash programs. 
+\EducationEntry{Developed and maintained tooling for working with Nordic devices}{2020-present}{Nordic Semiconductor}{
+% Short 	
+% I developed cross-platform tooling used internally and by customers for developing our devices. 
+% This included testing, profiling and parallelizing Rust, Python and Bash programs. 
+
+I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers for developing our devices. This includes tooling for collecting and bundling a portable toolchain for developing with Nordic's SDK, used by most users of Nordic's newer chips. The role also involved CI/CD systems in Azure Pipelines and Jenkins, as well as managed the releases of the aforementioned toolchains. The role also involved debugging and fixing multiprocess legacy applications in C++ and Python, as well as creating Docker images for building our tools. 
+I also worked on a cross-team project, which involved making a portable Python program that integrated with our Rust tool suite and package manager. I also worked with profiling and optimizing our build tools and our autocompletion system. 
+
+% low
+% This included creating and migrating Continuous Integration systems, as well as migrating them to Azure Pipelines and Jenkins
+% I was responsible for maintaining and deprecating our Python/C++ libraries and tools. 
+
+
 
 % ##Things I have done in Nordic
 % - testing device-lib 
@@ -158,12 +175,14 @@ This included profiling and parallelizing Rust, Python and Bash programs.
 % - nrfutil npm 
 % 	- Making Python project portable, and make it work with nrfutil 
 % 	- Profiling size usage, file access and how to reduce it
-% 	- Contributed to the python project 
+% 	- Contributed to the python project
+% - Testing util and probe lib 
+% - setting up Jenkins 
 }
 % Terse version of SINTEF
-\EducationEntry{Made a tool for comparing hydropower-production}{Summer 2019}{SINTEF Energy}{
-Making a domain-specific tool for translating outputs from a short-term and a long-term hydropower-production optimization program, translating both concepts and formats in under-documented code.
-}
+% \EducationEntry{Made a tool for comparing hydropower-production}{Summer 2019}{SINTEF Energy}{
+% Making a domain-specific tool for translating outputs from a short-term and a long-term hydropower-production optimization program, translating both concepts and formats in under-documented code.
+% }
 
 % More detailed version of SINTEF
 %\EducationEntry{Making a tool for comparing hydropower-production}{SINTEF Energy}{Summer 2019}{
@@ -182,38 +201,36 @@ Making a domain-specific tool for translating outputs from a short-term and a lo
 
 
 
-%Sanntids-studass 
-\EducationEntry{Participated in Nordic Semiconductors's social committe}{2022-present}{Nordic Semiconductor}
-{I organized and hosted social events like salary beers and social board game nights}
-
 % %Sanntids-studass 
-% \EducationEntry{Teaching assistant (TTK4145, Real-time programming)}{Spring 2020}{NTNU Part-time}
-% {Assisting students in designing a robust distributed system, controlling a set of model elevators in an unreliable network using unreliable hardware.}
+% \EducationEntry{Participated in Nordic Semiconductors's social committe}{2022-present}{Nordic Semiconductor}
+% {I organized and hosted social events like salary beers and social board game nights}
+
+%Sanntids-studass 
+\EducationEntry{Teaching assistant (TTK4145, Real-time programming)}{Spring 2020}{NTNU Part-time}
+{I aided students in designing a robust distributed system of model elevators on an unreliable network, using unreliable hardware.}
 
 %%Indel-studass 
 
 
-%%Indel-studass 
-%\EducationEntry{Student assistant (TTK4240, Industrial Electronics)}{Fall 2017}{NTNU Part-time}
-%{Asisting students in modeling and measuring an electric motor,  with a discrete encoder, as well as balancing an inverted pendulum using a combination of an energy-based and %an angle-based PID controller.
-%}
+%Indel-studass 
+\EducationEntry{Student assistant (TTK4240, Industrial Electronics)}{Fall 2017}{NTNU Part-time}
+{
+I assisted students in controlling an electric, inverted pendulum using a discrete encoder by helping them develop a hybrid PID regulator to stabilize it. 
+}
 
 \EducationEntry{Teaching assistant (TTK4115, Linear System Theory )}{Fall 2018}{NTNU Part-time}
-{I aided students in controlling a model helicopter using a linear multivariable regulator and a Kalman-filter to estimate state.
+{I aided students in controlling a model helicopter using a linear multivariable regulator and a Kalman filter to estimate state.
 }
 
 
-%%% Skills
+%%% Education
 %%% ------------------------------------------------------------
-\NewPart{Skills}{}
+\NewPart{Education}{}
 
-\SkillsEntry{Languages}{Norwegian (native tongue)}
-\SkillsEntry{}{English (C2)}
-\SkillsEntry{}{Swiss German B2-C1 orally,  A1-A2 written) }
-\SkillsEntry{}{French (A2-B1)}
+\EducationEntry{M.Sc. Cybernetics and Robotics}{2015-2020}{Norwegian University of Science and Technology (NTNU), 3.8/5 GPA}{}
+\EducationEntry{Exchange semester}{Spring 2019}{École Polytechnique Fédérale de Lausanne (EPFL)}{}
 
-\SkillsEntry{Software}{Rust, C++, Python, Elixir, \textsc{Matlab}}
-\SkillsEntry{Other}{Driver's license}
+
 
 %%% Hobbies
 %%% ------------------------------------------------------------
