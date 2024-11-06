@@ -4,5 +4,24 @@
             "language": "latex",
             "scheme": "file"
         }
+    ],
+    "workbench.colorCustomizations": {
+        "titleBar.activeBackground": "#19f215",
+        "titleBar.activeForeground": "#000000",
+        "titleBar.inactiveBackground": "#19f215",
+        "titleBar.inactiveForeground": "#000000",
+        "titleBar.border": "#19f215",
+        "activityBar.background": "#19f215",
+        "activityBar.foreground": "#000000",
+        "statusBar.background": "#19f215",
+        "statusBar.foreground": "#000000",
+        "statusBar.debuggingBackground": "#19f215",
+        "statusBar.debuggingForeground": "#000000",
+        "tab.activeBorder": "#19f215",
+        "iLoveWorkSpaceColors": true,
+        "iLoveWorkSpaceRandom": false
+    },
+    "cSpell.words": [
+        
     ]
 }
