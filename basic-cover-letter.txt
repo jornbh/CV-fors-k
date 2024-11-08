@@ -1,0 +1,3 @@
+I am a developer with 3 years of experience as a developer and tester at Nordic Semiconductor, mainly focusing on developing tooling for customers and developers on the PC-side.
+
+In my time at the company, I have worked with developing command-line tools written in Rust on all major operating systems for programming our and interacting with Nordic's devices, CI/CD-systems, as well as providing toolchains to help our customers' experience developing. On all major operating systems. Currently, I work as a tester for the tooling required for our customers to use Nordic's upcoming System-on-chips, implementing our Jenkins test system and writing the required Python tests.
