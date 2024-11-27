@@ -5,9 +5,9 @@
 % Feel free to distribute this template, but please keep the
 % referral to HowToTeX.com.
 % Date: July 2011
-% 
+%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-% How to use writeLaTeX: 
+% How to use writeLaTeX:
 %
 % You edit the source code here on the left, and the preview on the
 % right shows you the result within a few seconds.
@@ -23,7 +23,7 @@
 %
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \documentclass[paper=a4,fontsize=11pt,norsk]{scrartcl} % KOMA-article class
-							
+
 
 \usepackage[english]{babel}
 \usepackage[utf8x]{inputenc}
@@ -38,7 +38,7 @@
 \hypersetup{
     colorlinks=true,
     linkcolor=blue,
-    filecolor=magenta,      
+    filecolor=magenta,
     urlcolor=cyan,
 }
 \urlstyle{same}
@@ -63,7 +63,7 @@
 \newcommand{\MyName}[1]{ % Name
 		\Huge \usefont{OT1}{phv}{b}{n} \hfill #1
 		\par \normalsize \normalfont}
-		
+
 \newcommand{\MySlogan}[1]{ % Slogan (optional)
 		\large \usefont{OT1}{phv}{m}{n}\hfill \textit{#1}
 		\par \normalsize \normalfont}
@@ -80,8 +80,8 @@
 		\noindent\hangindent=2em\hangafter=0 % Indentation
 		\parbox{\spacebox}{        % Box to align text
 		\textit{#1}}			   % Entry name (birth, address, etc.)
-		\hspace{1.5em} #2 \par}    % Entry value	
-		
+		\hspace{1.5em} #2 \par}    % Entry value
+
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill      % Study
 		\colorbox{Black}{%
@@ -142,69 +142,69 @@
 
 
 \WorkEntry{Software tester}{2023-present}{Nordic Semiconductor}{
-I helped increase our and our customer's confidence in the tools we made for doing DFUs and resetting nRF devices using Nordic's Python testing framework. 
-The tests were done both on FPGAs and directly on hardware. I also helped to make the CI/CD system using Jenkins/Bash for building and testing and the Docker images we needed to run on the FPGAs. 
+I helped increase our and our customer's confidence in the tools we made for doing DFUs and resetting nRF devices using Nordic's Python testing framework.
+The tests were done both on FPGAs and directly on hardware. I also worked on the CI/CD system using Jenkins/Bash for building and testing. Additionally, I made the Docker images we that ran the nodes controlling to the FPGAs.
 
-% Tested tools used for firmware updates controlling nRF devices. 
-% - Verified that the changes worked as expected according to the product specification. 
-% - Testing on FPGA and on hardware. 
-% - Testing using a Bash/Python framework. 
-% - Created a build and a test system in Jenkins. 
+% Tested tools used for firmware updates controlling nRF devices.
+% - Verified that the changes worked as expected according to the product specification.
+% - Testing on FPGA and on hardware.
+% - Testing using a Bash/Python framework.
+% - Created a build and a test system in Jenkins.
 % - Creating Docker image to be used by Jenkins
 
-} 
+}
 
 
 \WorkEntry{Software developer}{2020-2023}{Nordic Semiconductor}{
-I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers, written in Rust. 
-One of the tools was a bundler for making an isolated toolchain used for working with the nRF SDK. The tool greatly simplified the initial installation for our first-time users and increasing reproducibility for customer support.  
-Additionally, I made our our dynamic completion system more usable, taking execution time from 1 second to 0.3 seconds, profiling using ProcMon and Visual Studio. 
-I also helped on updating one of our legacy C++ projects. 
-% Finally. I worked on a multi-team project to make a Rust/Python program that used a built-in Python installation, while also limiting the scope of the project. 
-% The tools were written in . 
-% Also helped maintain legacy C++ project. 
+I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers, written in Rust.
+One of the tools was a bundler for making an isolated toolchain used for working with the nRF SDK. The tool greatly simplified the initial installation for our first-time users and increasing reproducibility for customer support.
+Additionally, I made our our dynamic completion system more usable, taking execution time from 1 second to 0.3 seconds, profiling using ProcMon and Visual Studio.
+I also helped on updating one of our legacy C++ projects.
+% Finally. I worked on a multi-team project to make a Rust/Python program that used a built-in Python installation, while also limiting the scope of the project.
+% The tools were written in .
+% Also helped maintain legacy C++ project.
 % - Helped maintain nrfjprog (Multiprocess C++ project)
-% - Made and maintained Azure/Jenkins pipelines. 
+% - Made and maintained Azure/Jenkins pipelines.
 % - Cross-team project, integrating Python code to be integrated with Rust
-% - Profiling and optimizing build tools and autocompletion systems. 
+% - Profiling and optimizing build tools and autocompletion systems.
 }
 
 
 % \WorkEntry{Developed and maintained tooling for working with Nordic devices}{2020-present}{Nordic Semiconductor}{
-% % Short 	
-% % I developed cross-platform tooling used internally and by customers for developing our devices. 
-% % This included testing, profiling and parallelizing Rust, Python and Bash programs. 
+% % Short
+% % I developed cross-platform tooling used internally and by customers for developing our devices.
+% % This included testing, profiling and parallelizing Rust, Python and Bash programs.
 
-% I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers for developing our devices. This includes tooling for collecting and bundling a portable toolchain for developing with Nordic's SDK, used by most users of Nordic's newer chips. The role also involved CI/CD systems in Azure Pipelines and Jenkins, as well as managed the releases of the aforementioned toolchains. The role also involved debugging and fixing multiprocess legacy applications in C++ and Python, as well as creating Docker images for building our tools. 
-% I also worked on a cross-team project, which involved making a portable Python program that integrated with our Rust tool suite and package manager. I also worked with profiling and optimizing our build tools and our autocompletion system. 
+% I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers for developing our devices. This includes tooling for collecting and bundling a portable toolchain for developing with Nordic's SDK, used by most users of Nordic's newer chips. The role also involved CI/CD systems in Azure Pipelines and Jenkins, as well as managed the releases of the aforementioned toolchains. The role also involved debugging and fixing multiprocess legacy applications in C++ and Python, as well as creating Docker images for building our tools.
+% I also worked on a cross-team project, which involved making a portable Python program that integrated with our Rust tool suite and package manager. I also worked with profiling and optimizing our build tools and our autocompletion system.
 
 % % low
 % % This included creating and migrating Continuous Integration systems, as well as migrating them to Azure Pipelines and Jenkins
-% % I was responsible for maintaining and deprecating our Python/C++ libraries and tools. 
+% % I was responsible for maintaining and deprecating our Python/C++ libraries and tools.
 
 
 
 % % ##Things I have done in Nordic
-% % - testing device-lib 
-% % - toolchain-bundler 
-% % 	- Building and releasing the toolchain bundles until another team was able to take the job in CI 
+% % - testing device-lib
+% % - toolchain-bundler
+% % 	- Building and releasing the toolchain bundles until another team was able to take the job in CI
 % % 	- Parallelizing and simplifying for performance gains
-% % - pc-ble-driver-py 
-% % - nrfutil 
-% % - azure pipelines 
+% % - pc-ble-driver-py
+% % - nrfutil
+% % - azure pipelines
 % % - nrfutil completion
 % % - nrfutil device guessing
 % % - Profiling nrfutil device and completion
 % % 	- Linux and Windows
-% % - Debug Linux and Microsoft processes 
-% % - NoVel 
-% % - Make docker images for building 
-% % - nrfutil npm 
-% % 	- Making Python project portable, and make it work with nrfutil 
+% % - Debug Linux and Microsoft processes
+% % - NoVel
+% % - Make docker images for building
+% % - nrfutil npm
+% % 	- Making Python project portable, and make it work with nrfutil
 % % 	- Profiling size usage, file access and how to reduce it
 % % 	- Contributed to the python project
-% % - Testing util and probe lib 
-% % - setting up Jenkins 
+% % - Testing util and probe lib
+% % - setting up Jenkins
 
 
 % }
@@ -212,41 +212,41 @@ I also helped on updating one of our legacy C++ projects.
 
 % Terse version of SINTEF
 % \WorkEntry{Software developer, Summer student}{Summer 2019}{SINTEF Energy}{
-% I made a Python tool for translating outputs from a short-term and a long-term hydropower-production optimization program, making them comparable. 
+% I made a Python tool for translating outputs from a short-term and a long-term hydropower-production optimization program, making them comparable.
 % }
 
 % More detailed version of SINTEF
 %\WorkEntry{Making a tool for comparing hydropower-production}{SINTEF Energy}{Summer 2019}{
-%SINTEF Energy has two programs for planning how to most efficiently drain water reservoirs to get %the most out of the fluctuating water prices. Since one was a long-term model, while the other one was %more detailed, the job consisted of learning the models well enough, so that an automated program could be %made for translating the results from SHOP into the same format as the one for Prodrisk.  
+%SINTEF Energy has two programs for planning how to most efficiently drain water reservoirs to get %the most out of the fluctuating water prices. Since one was a long-term model, while the other one was %more detailed, the job consisted of learning the models well enough, so that an automated program could be %made for translating the results from SHOP into the same format as the one for Prodrisk.
 %}
 
 % %Short version of Nordic summer job
 % \WorkEntry{Developing a simple BLE-mesh simulator}{Summer 2018}{Nordic Semiconductor Summer-job}{
-% Developed simulator and presentation of results of a simple simulator used to estimate packet loss and throughput of a BLE mesh. 
+% Developed simulator and presentation of results of a simple simulator used to estimate packet loss and throughput of a BLE mesh.
 
 % }
 % More detailed version of the Nordic summer job
 %\WorkEntry{Developing a simple BLE-mesh simulator}{Summer 2018}{Nordic Semiconductor Summer-job}{
-%Developing a simple simulator with GUI for package transmission for Bluetooth Low energy mesh so that % customers could get an idea of the performance of a star topology of BLE nodes. The job %included setting up experiments with NRF51 boards to gather data on the number of received %packets, and some of their properties. As well as setting up a simulator in Python able to give %distributions and percentiles for discovery time and throughput, given a given set of parameters given by %the user (Jitter, number of nodes, packet-length, etc.) 
+%Developing a simple simulator with GUI for package transmission for Bluetooth Low energy mesh so that % customers could get an idea of the performance of a star topology of BLE nodes. The job %included setting up experiments with NRF51 boards to gather data on the number of received %packets, and some of their properties. As well as setting up a simulator in Python able to give %distributions and percentiles for discovery time and throughput, given a given set of parameters given by %the user (Jitter, number of nodes, packet-length, etc.)
 %}
 
 
 
-% %Sanntids-studass 
+% %Sanntids-studass
 % \WorkEntry{Participated in Nordic Semiconductors's social committe}{2022-present}{Nordic Semiconductor}
 % {I organized and hosted social events like salary beers and social board game nights}
 
-%Sanntids-studass 
+%Sanntids-studass
 \WorkEntry{Teaching assistant (TTK4145, Real-time programming)}{Spring 2020}{NTNU Part-time}
 {I aided students in designing a robust distributed system of model elevators on an unreliable network, using unreliable hardware.}
 
-%%Indel-studass 
+%%Indel-studass
 
 
-%Indel-studass 
+%Indel-studass
 \WorkEntry{Student assistant (TTK4240, Industrial Electronics)}{Fall 2017}{NTNU Part-time}
 {
-	I assisted students in controlling an inverted pendulum using a discrete encoders and a controller using a non-linear controller they made in LabView. 
+	I assisted students in controlling an inverted pendulum using a discrete encoders and a controller using a non-linear controller they made in LabView.
 }
 
 \WorkEntry{Teaching assistant (TTK4115, Linear System Theory )}{Fall 2018}{NTNU Part-time}
