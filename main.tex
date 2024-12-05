@@ -141,11 +141,158 @@
 \NewPart{Work experience}{}
 
 
+% TODO: Start the thing
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\WorkEntry{Summer intern embedded developer}{Summer 2018}{Nordic Semiconductor}
+{I made firmware to characterize the characteristics of receiving Bluetooth
+packages and characterizing package loss, written in C. The firmware was
+interrupt based and worked with the Direct Memory Access peripherals like the
+Bluetooth radio. It was also branchless to ensure consistent behavior. The
+results were made for making a simulator form estimatign package loss, written
+in Python. The graphic surface made using tkinter.
+}
 
 
 
-% TODO: Fill in the long CV of experiences and stuff: 
-% - SINTEF: Python, hdf5, SHOP, Prodrisk, 
+\WorkEntry{Summer researcher}{Summer 2019}{SINTEF Energy Research} { I made a
+Python tool for translating the output in hdf format form SINTEF's short-term
+tool for optimizing hydro-power production to be compatible with their
+long-term tool for optimizing optimizing the same. The job involved learnign
+the differing concepts of hydro-power production, so that they could be
+translated properly.
+}
+
+
+
+
+
+
+% TODO Add all the projects
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+\WorkEntry{Helped maintain and debug C++ library}{2020}{Nordic Semiconductor} {
+I made improvements and debugged Nordic Semiconductor's internal library for
+communicating with nRF development kits. The tool was built using cmake, vcpkg
+and ninja. In order to simplify getting an overview of the project Doxygen was
+also used.
+}
+
+
+\WorkEntry{Migrated build-systems from Jenkins to Azure pipelines}{2020}{Nordic Semiconductor}
+{I migrated and created build-pipelines for some of our tools to Azure
+pipelines, perfomring installations of the necessary tools, like vcpkg on
+Microsoft build-nodes. The nodes were Linux, MacOS and Windows. The
+build-scripts were in the Azure pipelines format, and in Bash and Powershell.
+}
+
+
+
+\WorkEntry{Migrate and maintain legacy Python projects}{2021}{Nordic Semiconductor}
+{Migrated hybrid Python/C++ from Python 3.8 to 3.9. I also fixed bugs related to
+the Python Global Interpreter Lock using the Visual Studio as a post-mortem
+debugger. The task also involved updating the Windows registry to set Visual
+Studio or Windbg as the post-mortem debugger. The task also involved setting up
+the Pyinstaller script, as well as making sure that the resulting protable
+executable functioned. The task also approving external pull-requests and
+making sure the project was in a good spot before it was retired.
+}
+
+
+
+% TODO this is the last point, now I have only added the basic points
+\WorkEntry{Create a protable toolchains for the nRF Connect SDK}{2022}{Nordic Semiconductor}
+{
+%Made a Rust build-tool for making a portable toolchain for developing for Nordic semiconductor's
+- Rust
+- Bash
+- homebrew
+- apt
+- Cargo
+}
+
+\WorkEntry{Complete and optimize automatic completion system}{2022}{Nordic Semiconductor}
+{
+- Rust
+- Visual Studio
+- ProcMon
+}
+
+
+% Adding automatic device guessing to nrfutil-device
+\WorkEntry{Add device-guessing for our command-line tools}{2023}{Nordic Semiconductor}
+{Added support in our Rust CLI tool for automatically guess what device to
+perform an operation on if there is only one connected device that the operation can be perfomred on.
+}
+
+
+\WorkEntry{Add parent-process monitoring to long-runnign CLI tools}{2022}{Nordic Semiconductor}
+{
+- C++
+- strace
+- Linux system signals and process groups
+- Windows process groups (Windows API)
+}
+
+
+
+\WorkEntry{Made Python/Rust tool made for estimating power-usage}{2022}{Nordic Semiconductor}
+{
+- Pyinstaller
+- Anaconda
+- Pip
+}
+
+
+\WorkEntry{Made an internal Rust regsitry}{2023}{Nordic Semiconductor}
+{
+- Artifactory
+- Cargo
+- Jenkins,
+- (CI-system, git/github, sed)
+- Semantic versioning
+}
+
+
+\WorkEntry{Made proof of concepts for OAuth login}{2023}{Nordic Semiconductor}
+{
+- Azure
+- OAuth
+}
+
+
+\WorkEntry{Set up Jenkins for building and testing}{2024}{Nordic Semiconductor}
+{
+% Probe-lib
+- Jenkins
+- Bash
+}
+
+
+\WorkEntry{Test libraries and command-line tools for interacting with development kits}{2024}{Nordic Semiconductor}
+{
+- pytest
+- Common-test-framework
+- pydebug. Remote debugging
+- pytest-bdd
+- Set up FPGA (profpga)
+}
+
+
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+
+
+% TODO: Fill in the long CV of experiences and stuff:
+% - SINTEF: Python, hdf5, SHOP, Prodrisk,
 % - Nordic: numpy, tkinter, Bluetooth, nrf52, (exponential distribution)
 
 %\WorkEntry{Software tester}{2023-present}{Nordic Semiconductor}{
@@ -222,7 +369,12 @@
 
 % More detailed version of SINTEF
 %\WorkEntry{Making a tool for comparing hydropower-production}{SINTEF Energy}{Summer 2019}{
-%SINTEF Energy has two programs for planning how to most efficiently drain water reservoirs to get %the most out of the fluctuating water prices. Since one was a long-term model, while the other one was %more detailed, the job consisted of learning the models well enough, so that an automated program could be %made for translating the results from SHOP into the same format as the one for Prodrisk.
+%SINTEF Energy has two programs for planning how to most efficiently drain
+%water reservoirs to get %the most out of the fluctuating water prices. Since
+%one was a long-term model, while the other one was %more detailed, the job
+%consisted of learning the models well enough, so that an automated program
+%could be %made for translating the results from SHOP into the same format as
+%the one for Prodrisk.
 %}
 
 % %Short version of Nordic summer job
@@ -271,7 +423,7 @@ Measurement and profiling for optimization. Rasterisation. Programming Nvidia GP
 }
 
 \EducationEntry{TDT4120 - Algorithms and Data Structures}{Spring 2018}{NTNU}
-{The course involved topics like heaps, trees, shortest-path algorithms, minimum spanning trees, maximum flow algorithms and minimum cut algorithms. Breadth/Depth First Search (BFS/DFS), Sorting algorithms, Big O notation. 
+{The course involved topics like heaps, trees, shortest-path algorithms, minimum spanning trees, maximum flow algorithms and minimum cut algorithms. Breadth/Depth First Search (BFS/DFS), Sorting algorithms, Big O notation.
 }
 
 
