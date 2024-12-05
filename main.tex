@@ -141,9 +141,16 @@
 \NewPart{Work experience}{}
 
 
-\WorkEntry{Software tester}{2023-present}{Nordic Semiconductor}{
-I helped increase our and our customer's confidence in the tools we made for doing DFUs and resetting nRF devices using Nordic's Python testing framework.
-The tests were done both on FPGAs and directly on hardware. I also worked on the CI/CD system using Jenkins/Bash for building and testing. Additionally, I made the Docker images we that ran the nodes controlling to the FPGAs.
+
+
+
+% TODO: Fill in the long CV of experiences and stuff: 
+% - SINTEF: Python, hdf5, SHOP, Prodrisk, 
+% - Nordic: numpy, tkinter, Bluetooth, nrf52, (exponential distribution)
+
+%\WorkEntry{Software tester}{2023-present}{Nordic Semiconductor}{
+%I helped increase our and our customer's confidence in the tools we made for doing DFUs and resetting nRF devices using Nordic's Python testing framework.
+%The tests were done both on FPGAs and directly on hardware. I also worked on the CI/CD system using Jenkins/Bash for building and testing. Additionally, I made the Docker images we that ran the nodes controlling to the FPGAs.
 
 % Tested tools used for firmware updates controlling nRF devices.
 % - Verified that the changes worked as expected according to the product specification.
@@ -151,22 +158,21 @@ The tests were done both on FPGAs and directly on hardware. I also worked on the
 % - Testing using a Bash/Python framework.
 % - Created a build and a test system in Jenkins.
 % - Creating Docker image to be used by Jenkins
+% }
 
-}
-
-\WorkEntry{Software developer}{2020-2023}{Nordic Semiconductor}{
-I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers, written in Rust.
-One of the tools was a bundler for making an isolated toolchain used for working with the nRF SDK. The tool greatly simplified the initial installation for our first-time users and increasing reproducibility for customer support.
-Additionally, I made our dynamic completion system more usable, taking execution time from 1 second to 0.3 seconds, profiling using ProcMon and Visual Studio.
-I also helped on updating one of our legacy C++ projects.
-% Finally. I worked on a multi-team project to make a Rust/Python program that used a built-in Python installation, while also limiting the scope of the project.
-% The tools were written in .
-% Also helped maintain legacy C++ project.
-% - Helped maintain nrfjprog (Multiprocess C++ project)
-% - Made and maintained Azure/Jenkins pipelines.
-% - Cross-team project, integrating Python code to be integrated with Rust
-% - Profiling and optimizing build tools and autocompletion systems.
-}
+%\WorkEntry{Software developer}{2020-2023}{Nordic Semiconductor}{
+%I developed tooling for Windows, MacOS and Ubuntu, used internally and by customers, written in Rust.
+%One of the tools was a bundler for making an isolated toolchain used for working with the nRF SDK. The tool greatly simplified the initial installation for our first-time users and increasing reproducibility for customer support.
+%Additionally, I made our dynamic completion system more usable, taking execution time from 1 second to 0.3 seconds, profiling using ProcMon and Visual Studio.
+%I also helped on updating one of our legacy C++ projects.
+%% Finally. I worked on a multi-team project to make a Rust/Python program that used a built-in Python installation, while also limiting the scope of the project.
+%% The tools were written in .
+%% Also helped maintain legacy C++ project.
+%% - Helped maintain nrfjprog (Multiprocess C++ project)
+%% - Made and maintained Azure/Jenkins pipelines.
+%% - Cross-team project, integrating Python code to be integrated with Rust
+%% - Profiling and optimizing build tools and autocompletion systems.
+%}
 
 
 % \WorkEntry{Developed and maintained tooling for working with Nordic devices}{2020-present}{Nordic Semiconductor}{
@@ -231,36 +237,64 @@ I also helped on updating one of our legacy C++ projects.
 
 
 
-% \WorkEntry{Participated in Nordic Semiconductors's social committe}{2022-present}{Nordic Semiconductor}
-% {I organized and hosted social events like salary beers and social board game nights}
+\WorkEntry{Participated in Nordic Semiconductors's social committee}{2022-2024}{Nordic Semiconductor}
+{I organized and hosted social events like salary beers and social board game nights}
 
-%Sanntids-studass
 \WorkEntry{Teaching assistant (TTK4145, Real-time programming)}{Spring 2020}{NTNU Part-time}
 {I aided students in designing a robust distributed system of model elevators on an unreliable network, using unreliable hardware, TCP/UDP and Erlang/Elixir or Go}
 
+\WorkEntry{Teaching assistant (TTK4215 - Adaptive Control)}{Fall 2019}{NTNU Part-time}
+{I assisted students with theoretical exercises relating to dynamic parameter estimation for linear systems, Model Reference Adaptive Control (MRAC), adaptive backstepping and reinforcement learning. Some exercises were also simulations of the estimators and controllers in Matlab/Simulink. I also approved exercises.
+}
 
 
-%Indel-studass
 \WorkEntry{Teaching assistant (TTK4240, Industrial Electronics)}{Fall 2017}{NTNU Part-time}
-{I assisted students in controlling an inverted pendulum using a discrete encoder and an electric motor using a non-linear controller they made in LabView. The job also involved helping with exercises relating to electrical impedance, as well as converters like buck- and boost converters. 
+{I assisted students in controlling an inverted pendulum using a discrete encoder and an electric motor using a non-linear controller they made in LabView. The job also involved helping with exercises relating to electrical impedance, as well as converters like buck- and boost converters.
 }
 
 \WorkEntry{Teaching assistant (TDT4102 - Object-Oriented Programming)}{Spring 2017}{NTNU Part-time}
-{I helped students learn the basics of C++, object-oriented programming, templates and pointers/smart-pointers. 
+{I helped students learn the basics of C++, object-oriented programming, templates and pointers/smart-pointers.
 }
 
 
 \NewPart{Relevant univerisity Courses}{}
 
+
 \EducationEntry{TTK4155 - Embedded and Industrial Computer Systems Design}{Fall 2017}{NTNU}
-{Made a system made of multiple microcontrollers, using I2C, UART, CAN protocols. The processor was an ATMega. Most components were connected using a breadboard, other components were an ADC, variable resistances and external flash. 
+{Made a system made of multiple microcontrollers, using I2C, UART, CAN protocols. The processor was an ATMega. Most components were connected using a breadboard, other components were an ADC, variable resistances and external flash.
 }
+
+
+\EducationEntry{TDT4200 - Parallel Computing}{Fall 2018}{NTNU}
+{
+Measurement and profiling for optimization. Rasterisation. Programming Nvidia GPUs using CUDA, as well as profiling the code.
+}
+
+\EducationEntry{TDT4120 - Algorithms and Data Structures}{Spring 2018}{NTNU}
+{The course involved topics like heaps, trees, shortest-path algorithms, minimum spanning trees, maximum flow algorithms and minimum cut algorithms. Breadth/Depth First Search (BFS/DFS), Sorting algorithms, Big O notation. 
+}
+
+
+
+\EducationEntry{Information security and privacy}{Spring 2019}{EPFL}
+{The course involved topics like SQL-injections, asymetric encryption, side-channel attacks and buffer-overflow attacks. It also included homomorphic encryption, de-anonymization, zero-knowledge proofs. SQL-injections, cross-site scripting, side-channel attacks and buffer-overflow attacks.}
 
 
 \EducationEntry{TFY4115 - Physics}{Fall 2016}{NTNU}
 {Theoretical subject involving rotational and translational mechanics, momentum and thermodynamics.}
 
+\EducationEntry{Signal processing for communication}{Spring 2019}{EPFL}
+{Discrete Fourier Transform (DFT). Finite and infinite Impulse Response filters. Signal encoding using a carrier wave. High and low-pass filters}
 
+\EducationEntry{Artificial Neural Networks}{Spring 2019}{EPFL}
+{Classification. Artificial neural networks for reinforcement learning (Q-learning). Long-Short-Term Memory. Some exercises were done in Jupyter notebooks}
+
+\EducationEntry{TDT4125 - Algorithm Construction}{Spring 2018}{NTNU}
+{The course was for advanced algorithms beyond the normal algorithms and data structures course. The course involved solutions and approximations for NP-complete problems, like kernelization, Integer linear programming and Traveling Sales-Person in metric spaces. It also included matroids, streaming algorithms and adversarial problems, like k-server.}
+
+
+\EducationEntry{Computer vision}{Spring 2019}{EPFL}
+{The course involved topics edge detection, image segmentation and clustering}
 
 
 
