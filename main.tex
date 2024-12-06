@@ -141,7 +141,6 @@
 \NewPart{Work experience}{}
 
 
-% TODO: Start the thing
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
@@ -163,17 +162,6 @@ long-term tool for optimizing optimizing the same. The job involved learnign
 the differing concepts of hydro-power production, so that they could be
 translated properly.
 }
-
-
-
-
-
-
-% TODO Add all the projects
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-
-
-
 
 \WorkEntry{Helped maintain and debug C++ library}{2020}{Nordic Semiconductor} {
 I made improvements and debugged Nordic Semiconductor's internal library for
@@ -205,81 +193,87 @@ making sure the project was in a good spot before it was retired.
 
 
 % TODO this is the last point, now I have only added the basic points
-\WorkEntry{Create a protable toolchains for the nRF Connect SDK}{2022}{Nordic Semiconductor}
+\WorkEntry{Create a portable toolchains for the nRF Connect SDK}{2022}{Nordic Semiconductor}
 {
-%Made a Rust build-tool for making a portable toolchain for developing for Nordic semiconductor's
-- Rust
-- Bash
-- homebrew
-- apt
-- Cargo
+Made a Rust build-tool for making a portable toolchain for developing for
+Nordic semiconductor's nRF Connect SDK (Software Development Kit). In order to
+make toolchains for the different operating systems, things like Homebrew and
+apt were used. Async Rust with tokio was used in some cases for a speed-up.
+Also, chroot and fakeroot were used to make the toolcahin on Linux.
 }
 
 \WorkEntry{Complete and optimize automatic completion system}{2022}{Nordic Semiconductor}
 {
-- Rust
-- Visual Studio
-- ProcMon
+    I helped finishing up our command completon system, as well as fixing bugs.
+    I also fixed poor performance on Windows, by profiling time-usage and the
+    timing of system calls using ProcMon. Visual Studio was also used for
+    profiling.
 }
 
 
 % Adding automatic device guessing to nrfutil-device
 \WorkEntry{Add device-guessing for our command-line tools}{2023}{Nordic Semiconductor}
-{Added support in our Rust CLI tool for automatically guess what device to
-perform an operation on if there is only one connected device that the operation can be perfomred on.
+{
+Added support in our Rust CLI tool for automatically guess what device to
+perform an operation on if there is only one connected device that the
+operation can be perfomred on. The work involved Json Serialization/Deserialization using Rust Serde.
 }
 
 
 \WorkEntry{Add parent-process monitoring to long-runnign CLI tools}{2022}{Nordic Semiconductor}
 {
-- C++
-- strace
-- Linux system signals and process groups
-- Windows process groups (Windows API)
+In order to keep one of our C++ cli-tools from having orphaned child-processes when
+testing, it was required that the child monitored the parent. To documen the issue,
+strace and kill and ps were used to observe and trigger the behaviour. Solutions were
+made for Unix using process groups. On Windows, job objects objects were used
+to kill the children if the parent died. The task also involved pushing back
+against this solution, as simpler solutions could be made using Boost.
 }
 
 
 
 \WorkEntry{Made Python/Rust tool made for estimating power-usage}{2022}{Nordic Semiconductor}
 {
-- Pyinstaller
-- Anaconda
-- Pip
+Expert code made using Python Anaconda needed to be emeddable in our modular
+CLI-tool. I helped push for using PyInstaller for exposing the Python code,
+finishing the project much faster. I also profiled and optimized the file-size,
+by monitoring all accessed files using ProcMon and then replacing the large
+SciPy linear algbra libraries with the ones form pip. This took the file-size
+from 250MB to 70MB, making the program much more usable.
 }
 
 
 \WorkEntry{Made an internal Rust regsitry}{2023}{Nordic Semiconductor}
 {
-- Artifactory
-- Cargo
-- Jenkins,
-- (CI-system, git/github, sed)
-- Semantic versioning
+I made an internal Rust Regsitry for publishing packages or Artifactory. By
+using the Semantic versioning in Cargo, I made an ordering that allowed for
+nightly releases. I also made a system using Linux coreutils and Cargo, so that
+Jenkins could update the Git-repository on GitHub.
 }
 
 
 \WorkEntry{Made proof of concepts for OAuth login}{2023}{Nordic Semiconductor}
 {
-- Azure
-- OAuth
+I made an OAuth proof of concept for signing in to Azure with a Microsoft using
+Rust.
 }
 
 
 \WorkEntry{Set up Jenkins for building and testing}{2024}{Nordic Semiconductor}
 {
-% Probe-lib
-- Jenkins
-- Bash
+    I set up our Jenkins test and buid pipelines. Most of the logic was made using Bash to keep the logic more portable between different CI vendors.
 }
 
 
 \WorkEntry{Test libraries and command-line tools for interacting with development kits}{2024}{Nordic Semiconductor}
 {
-- pytest
-- Common-test-framework
-- pydebug. Remote debugging
-- pytest-bdd
-- Set up FPGA (profpga)
+I made tests for our libraries and our CLI-tools that integrated with our
+Develpment Kits. The test-frameworks were pytest/pytest-bdd and Nordic's
+internal test framework. Pydebug remote was used for simplifying development,
+even on remote nodes, even allowing debugging on CI if need be. Tests were ran
+on proper hardware and on FPGAs, flasing the netslist using profpga. The job
+also involved being up to date on the different devices, some of their
+different behaviour and making sure the Jenkins nodes were running properly
 }
 
 
