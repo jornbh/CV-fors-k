@@ -133,8 +133,60 @@
 \SkillsEntry{}{Swiss German (fluent orally, A1-A2 written), French (A2)}
 % \SkillsEntry{}{}
 
-\SkillsEntry{Software}{Rust, C++, Python, Git, Docker, Jenkins}
-% \SkillsEntry{Other}{Driver's license}
+\SkillsEntry{Programming languages}{
+    % Good
+    Rust+Cargo,
+    C/C++,
+    Python,
+    Matlab/Simulink,
+%    Jenkins,
+%    Azure pipelines,
+%    Embedded development,
+%    Erlang/Elixir,
+%    Bash,
+%    PowerShell,
+%    RegEx,
+}
+
+\SkillsEntry{Programming tools}{
+    pytest,
+    strace,
+    GNU coreutils,
+    Git,
+    Docker,
+%    pytest-bdd,
+%    vim,
+%    Procmon,
+%    vcpkg,
+%    Jira
+%    Git,
+%    Bitbucket,
+%    GitHub,
+%    Docker,
+%    Windbg,
+%    RESTful APIs,
+%    html,
+}
+
+\SkillsEntry{Concepts}{
+    Concurrency,
+    Dependency Injection,
+    Scrum,
+    OOP
+%    Linux system calls, signals and processes,
+%    Functional programming
+%    Agile development
+%    Asyncronous code,
+%    Semantic versioning,
+%    Software testing,
+%    % Medium, and I kind of understand it
+%    OAuth,
+%    JSON/YAML/TOML,
+%    Intel hex-format, % The most important parts, and how it is structured
+%    %% Kind of bad
+%    tkinter,
+}
+
 
 %%% Work experience
 %%% ------------------------------------------------------------
@@ -144,139 +196,20 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 
-\WorkEntry{Summer intern embedded developer}{Summer 2018}{Nordic Semiconductor}
-{I made firmware to characterize the characteristics of receiving Bluetooth
-packages and characterizing package loss, written in C. The firmware was
-interrupt based and worked with the Direct Memory Access peripherals like the
-Bluetooth radio. It was also branchless to ensure consistent behavior. The
-results were made for making a simulator form estimatign package loss, written
-in Python. The graphic surface made using tkinter.
-}
-
-
-
-\WorkEntry{Summer researcher}{Summer 2019}{SINTEF Energy Research} { I made a
-Python tool for translating the output in hdf format form SINTEF's short-term
-tool for optimizing hydro-power production to be compatible with their
-long-term tool for optimizing optimizing the same. The job involved learnign
-the differing concepts of hydro-power production, so that they could be
-translated properly.
-}
-
-\WorkEntry{Helped maintain and debug C++ library}{2020}{Nordic Semiconductor} {
-I made improvements and debugged Nordic Semiconductor's internal library for
-communicating with nRF development kits. The tool was built using cmake, vcpkg
-and ninja. In order to simplify getting an overview of the project Doxygen was
-also used.
-}
-
-
-\WorkEntry{Migrated build-systems from Jenkins to Azure pipelines}{2020}{Nordic Semiconductor}
-{I migrated and created build-pipelines for some of our tools to Azure
-pipelines, perfomring installations of the necessary tools, like vcpkg on
-Microsoft build-nodes. The nodes were Linux, MacOS and Windows. The
-build-scripts were in the Azure pipelines format, and in Bash and Powershell.
-}
-
-
-
-\WorkEntry{Migrate and maintain legacy Python projects}{2021}{Nordic Semiconductor}
-{Migrated hybrid Python/C++ from Python 3.8 to 3.9. I also fixed bugs related to
-the Python Global Interpreter Lock using the Visual Studio as a post-mortem
-debugger. The task also involved updating the Windows registry to set Visual
-Studio or Windbg as the post-mortem debugger. The task also involved setting up
-the Pyinstaller script, as well as making sure that the resulting protable
-executable functioned. The task also approving external pull-requests and
-making sure the project was in a good spot before it was retired.
-}
-
-
-
-% TODO this is the last point, now I have only added the basic points
-\WorkEntry{Create a portable toolchains for the nRF Connect SDK}{2022}{Nordic Semiconductor}
-{
-Made a Rust build-tool for making a portable toolchain for developing for
-Nordic semiconductor's nRF Connect SDK (Software Development Kit). In order to
-make toolchains for the different operating systems, things like Homebrew and
-apt were used. Async Rust with tokio was used in some cases for a speed-up.
-Also, chroot and fakeroot were used to make the toolcahin on Linux.
-}
-
-\WorkEntry{Complete and optimize automatic completion system}{2022}{Nordic Semiconductor}
-{
-    I helped finishing up our command completon system, as well as fixing bugs.
-    I also fixed poor performance on Windows, by profiling time-usage and the
-    timing of system calls using ProcMon. Visual Studio was also used for
-    profiling.
-}
-
-
-% Adding automatic device guessing to nrfutil-device
-\WorkEntry{Add device-guessing for our command-line tools}{2023}{Nordic Semiconductor}
-{
-Added support in our Rust CLI tool for automatically guess what device to
-perform an operation on if there is only one connected device that the
-operation can be perfomred on. The work involved Json Serialization/Deserialization using Rust Serde.
-}
-
-
-\WorkEntry{Add parent-process monitoring to long-runnign CLI tools}{2022}{Nordic Semiconductor}
-{
-In order to keep one of our C++ cli-tools from having orphaned child-processes when
-testing, it was required that the child monitored the parent. To documen the issue,
-strace and kill and ps were used to observe and trigger the behaviour. Solutions were
-made for Unix using process groups. On Windows, job objects objects were used
-to kill the children if the parent died. The task also involved pushing back
-against this solution, as simpler solutions could be made using Boost.
-}
-
-
-
-\WorkEntry{Made Python/Rust tool made for estimating power-usage}{2022}{Nordic Semiconductor}
-{
-Expert code made using Python Anaconda needed to be emeddable in our modular
-CLI-tool. I helped push for using PyInstaller for exposing the Python code,
-finishing the project much faster. I also profiled and optimized the file-size,
-by monitoring all accessed files using ProcMon and then replacing the large
-SciPy linear algbra libraries with the ones form pip. This took the file-size
-from 250MB to 70MB, making the program much more usable.
-}
-
-
-\WorkEntry{Made an internal Rust regsitry}{2023}{Nordic Semiconductor}
-{
-I made an internal Rust Regsitry for publishing packages or Artifactory. By
-using the Semantic versioning in Cargo, I made an ordering that allowed for
-nightly releases. I also made a system using Linux coreutils and Cargo, so that
-Jenkins could update the Git-repository on GitHub.
-}
-
-
-\WorkEntry{Made proof of concepts for OAuth login}{2023}{Nordic Semiconductor}
-{
-I made an OAuth proof of concept for signing in to Azure with a Microsoft using
-Rust.
-}
-
-
-\WorkEntry{Set up Jenkins for building and testing}{2024}{Nordic Semiconductor}
-{
-    I set up our Jenkins test and buid pipelines. Most of the logic was made using Bash to keep the logic more portable between different CI vendors.
-}
-
-
-\WorkEntry{Test libraries and command-line tools for interacting with development kits}{2024}{Nordic Semiconductor}
-{
-I made tests for our libraries and our CLI-tools that integrated with our
-Develpment Kits. The test-frameworks were pytest/pytest-bdd and Nordic's
-internal test framework. Pydebug remote was used for simplifying development,
-even on remote nodes, even allowing debugging on CI if need be. Tests were ran
-on proper hardware and on FPGAs, flasing the netslist using profpga. The job
-also involved being up to date on the different devices, some of their
-different behaviour and making sure the Jenkins nodes were running properly
-}
-
-
+\WorkEntry{Test tools for flashing, resettign and erasing development kits}{2024}{Nordic Semiconductor} { I made tests for our libraries and our CLI-tools that integrated with our Development Kits. The test-frameworks were pytest/pytest-bdd and Nordic's internal test framework. Pydebug remote was used for simplifying development, even on remote nodes, even allowing debugging on CI if need be. Tests were run on proper hardware and on FPGAs, flashing the netslist using proFPGA. The job also involved being up-to-date on the different devices, some of their different behavior and making sure the Jenkins nodes were running properly }
+\WorkEntry{Set up Jenkins for building and testing}{2024}{Nordic Semiconductor} { I set up our Jenkins test and build pipelines. Most of the logic was made using Bash to keep the logic more portable between different CI vendors. }
+\WorkEntry{Made proof of concepts for OAuth login}{2023}{Nordic Semiconductor} { I made an OAuth proof of concept for signing in to Azure with a Microsoft using Rust. }
+\WorkEntry{Made an internal Rust registry}{2023}{Nordic Semiconductor} { I made an internal Cargo(Rust) package registry for publishing packages to our internal Artifactory. By using the Semantic versioning in Cargo, I made an ordering that allowed for nightly releases. I also made a system using GNU coreutils and Cargo, so that Jenkins could update the Git-repository on GitHub. }
+\WorkEntry{Made Python/Rust tool made for estimating power-usage}{2022}{Nordic Semiconductor} { Expert code made using Python Anaconda needed to be embeddable in our modular CLI-tool. I helped push for using PyInstaller for exposing the Python code, finishing the project much faster. I also profiled and optimized the file-size, by monitoring all accessed files using ProcMon and then replacing the large SciPy linear algebra libraries with the ones form pip. This took the file-size from 250MB to 70MB, making the program much more usable. }
+\WorkEntry{Add parent-process monitoring to long-running CLI tools}{2022}{Nordic Semiconductor} { In order to keep one of our C++ cli-tools from having orphaned child-processes when testing, it was required that the child monitored the parent. To observe and document the issue, Strace and kill and "ps" were used to observe and trigger the behavior. Solutions were made for Unix using process groups. On Windows, job objects were used to kill the children if the parent died. The task also involved pushing back against this solution, as simpler solutions could be made using queues in Boost. }
+\WorkEntry{Add device-guessing for our command-line tools}{2023}{Nordic Semiconductor} { Added support in our Rust CLI tool for automatically guess what device to perform an operation on if there is only one connected device that the operation can be performed on. The work involved JSON Serialization/De-serialization using Rust Serde. }
+\WorkEntry{Complete and optimize automatic completion system}{2022}{Nordic Semiconductor} { I helped finishing up our command completion system, as well as fixing bugs. I also fixed poor performance on Windows, by profiling time-usage and the timing of system calls using "Process Monitor". Visual Studio was also used for profiling. }
+\WorkEntry{Create a portable toolchains for the nRF Connect SDK}{2022}{Nordic Semiconductor} { Made a Rust build-tool for making a portable toolchain for developing for Nordic semiconductor's nRF Connect SDK (Software Development Kit). In order to make toolchains for the different operating systems, things like Homebrew and apt were used. Async Rust with tokio was used in some cases for a speed-up. Also, chroot and FakeRoot were used to make the toolchain on Linux. }
+\WorkEntry{Migrate and maintain legacy Python projects}{2021}{Nordic Semiconductor} {Migrated hybrid Python/C++ from Python 3.8 to 3.9. I also fixed bugs related to the Python Global Interpreter Lock using the Visual Studio as a post-mortem debugger. The task also involved updating the Windows registry to set Visual Studio or WinDbg as the post-mortem debugger. The task also involved setting up the PyInstaller script, as well as making sure that the resulting portable executable functioned. The task also approving external pull-requests and making sure the project was in a good spot before it was retired. }
+\WorkEntry{Migrated build-systems from Jenkins to Azure pipelines}{2020}{Nordic Semiconductor} {I migrated and created build-pipelines for some of our tools to Azure pipelines, performing installations of the necessary tools, like vcpkg on Microsoft build-nodes. The nodes were Linux, MacOS and Windows. The build-scripts were in the Azure pipelines format, and in Bash and PowerShell. }
+\WorkEntry{Helped maintain and debug C++ library}{2020}{Nordic Semiconductor} { I made improvements and debugged Nordic Semiconductor's internal library for communicating with nRF development kits. The tool was built using CMake, vcpkg and ninja. In order to simplify getting an overview of the project Doxygen was also used. }
+\WorkEntry{Summer intern embedded developer}{Summer 2018}{Nordic Semiconductor} {I made firmware to characterize the characteristics of receiving Bluetooth packages and characterizing package loss, written in C. The firmware was interrupt based and worked with the Direct Memory Access peripherals like the Bluetooth radio. It was also branchless to ensure consistent behavior. The results were made for making a simulator form estimating package loss, written in Python. The graphic surface made using tkinter. }
+\WorkEntry{Summer researcher}{Summer 2019}{SINTEF Energy Research} { I made a Python tool for translating the output in hdf format form SINTEF's short-term tool for optimizing hydro-power production to be compatible with their long-term tool for optimizing the same. The job involved learning the differing concepts of hydro-power production, so that they could be translated properly. }
 
 
 
@@ -361,16 +294,6 @@ different behaviour and making sure the Jenkins nodes were running properly
 % I made a Python tool for translating outputs from a short-term and a long-term hydropower-production optimization program, making them comparable.
 % }
 
-% More detailed version of SINTEF
-%\WorkEntry{Making a tool for comparing hydropower-production}{SINTEF Energy}{Summer 2019}{
-%SINTEF Energy has two programs for planning how to most efficiently drain
-%water reservoirs to get %the most out of the fluctuating water prices. Since
-%one was a long-term model, while the other one was %more detailed, the job
-%consisted of learning the models well enough, so that an automated program
-%could be %made for translating the results from SHOP into the same format as
-%the one for Prodrisk.
-%}
-
 % %Short version of Nordic summer job
 % \WorkEntry{Developing a simple BLE-mesh simulator}{Summer 2018}{Nordic Semiconductor Summer-job}{
 % Developed simulator and presentation of results of a simple simulator used to estimate packet loss and throughput of a BLE mesh.
@@ -383,7 +306,7 @@ different behaviour and making sure the Jenkins nodes were running properly
 
 
 
-\WorkEntry{Participated in Nordic Semiconductors's social committee}{2022-2024}{Nordic Semiconductor}
+\WorkEntry{Participated in Nordic Semiconductor's social committee}{2022-2024}{Nordic Semiconductor}
 {I organized and hosted social events like salary beers and social board game nights}
 
 \WorkEntry{Teaching assistant (TTK4145, Real-time programming)}{Spring 2020}{NTNU Part-time}
@@ -423,7 +346,7 @@ Measurement and profiling for optimization. Rasterisation. Programming Nvidia GP
 
 
 \EducationEntry{Information security and privacy}{Spring 2019}{EPFL}
-{The course involved topics like SQL-injections, asymetric encryption, side-channel attacks and buffer-overflow attacks. It also included homomorphic encryption, de-anonymization, zero-knowledge proofs. SQL-injections, cross-site scripting, side-channel attacks and buffer-overflow attacks.}
+{The course involved topics like SQL-injections, asymmetric encryption, side-channel attacks and buffer-overflow attacks. It also included homomorphic encryption, de-anonymization, zero-knowledge proofs. SQL-injections, cross-site scripting, side-channel attacks and buffer-overflow attacks.}
 
 
 \EducationEntry{TFY4115 - Physics}{Fall 2016}{NTNU}
@@ -475,6 +398,12 @@ Can be provided on request
 \NewPart{GitHub}{}
 \url{https://github.com/jornbh/}
 \NewPart{Other}{}
-Driver's License
+
+\begin{itemize}
+% [topsep=8pt,itemsep=4pt,partopsep=4pt, parsep=4pt]
+\item Driver's License
+\item Formerly Scrum certified
+
+\end{itemize}
 
 \end{document}
