@@ -65,7 +65,7 @@
 		\noindent\hangindent=2em\hangafter=0 % Indentation
 		\parbox{\spacebox}{        % Box to align text
 		\textit{#1}}			   % Entry name (birth, address, etc.)
-		\hspace{1.5em} #2 \par}    % Entry valuepeata
+		\hspace{1.5em} #2 \par}    % Entry value
 
 \newcommand{\EducationEntry}[4]{
 		\noindent \textbf{#1} \hfill      % Study
@@ -120,6 +120,8 @@
 
 %%% Work experience
 %%% ------------------------------------------------------------
+
+
 \NewPart{Work experience}{}
 
 
@@ -142,25 +144,25 @@ results.
 }
 
 \WorkEntry{Test automation engineer}{2023-2025}{Nordic Semiconductor}{I
-Developed automated integration tests for Nordic Semiconductor's programming
+developed automated integration tests for Nordic Semiconductor's programming
 tools for the nRF series of System on Chips, combining multiple hardware
 modules into one. I implemented unit tests in close collaboration with the
 engineering team making the software we were testing, and the developer team
-making the secure-domain firmware of the they were reliant on on the
-microcontroller-side. The tests were made on top of Nordic Semiconductor's
-internal test automation tools. I also worked on setting up the CI/CD system,
-connected to a test rig with real hardware, and FPGAs, which allowed us to
-automate and improve the testing processes. The instant feedback helped
-increase developer efficiency and provided them with support in the development
-of a high quality product. The improvements also strengthened integration and
-communication with the rest of the organization and the larger delivery. The
-tests verified functionality for firmware-update and device-management tools on
-physical hardware and FPGA-based platforms for prototyping the programs for
-unreleased hardware. The tests and the test framework were made using pytest in
-Python and Bash. The CI/CD-system was made with Jenkins and automatically built
-and tested the tools. Docker environments were used to ensure repeatable
-environments, while bare-metal environments were used when predictable USB
-communication was required.
+making the secure-domain firmware on the microcontroller side that the
+programming tool had to interact with. The tests were made on top of Nordic
+Semiconductor's internal test automation tools. I also worked on setting up the
+CI/CD system, connected to a test rig with real hardware, and FPGAs, which
+allowed us to automate and improve the testing processes. The instant feedback
+helped increase developer efficiency and provided them with support in the
+development of a high quality product. The improvements also strengthened
+integration and communication with the rest of the organization and the larger
+delivery. The tests verified functionality for firmware-update and
+device-management tools on physical hardware and FPGA-based platforms for
+prototyping the programs for unreleased hardware. The tests and the test
+framework were made using pytest in Python and Bash. The CI/CD-system was made
+with Jenkins and automatically built and tested the tools. Docker environments
+were used to ensure repeatable environments, while bare-metal environments were
+used when predictable USB communication was required.
 }
 
 \WorkEntry{Software Developer}{2020-2023}{Nordic Semiconductor}{Developed and
@@ -174,7 +176,6 @@ requirements. Contributed to a multi-team project integrating Python
 functionality into a Rust-based application, while also maintaining legacy C++
 tooling. Developed and maintained Azure and Jenkins pipelines, and worked on
 profiling and optimizing build tools and autocompletion systems. }
-
 
 
 
@@ -216,8 +217,8 @@ profiling and optimizing build tools and autocompletion systems. }
 \WorkEntry{Teaching assistant (TTK4240, Industrial Electronics)}{Fall 2017}{NTNU Part-time}
 {
   I assisted students in a laboratory environment, where they were to control an inverted
-  pendulum using a discrete encoders, electric motors and a controller using a
-  non-linear controller they made in LabView.
+  pendulum using discrete encoders, electric motors and a controller using a
+  non-linear controller they made in LabVIEW.
 }
 
 % \WorkEntry{Teaching assistant (TTK4115, Linear System Theory)}{Fall 2018}{NTNU Part-time}{
